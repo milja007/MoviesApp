@@ -22,7 +22,8 @@
   color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 1.25rem;
-  box-shadow: 0 0 0 2px #dc2121;
+  box-shadow: 0 0 0 2px #dc2121; /* Red box shadow */
+  -webkit-box-shadow: 0 0 0 2px #dc2121; /* For Safari and older browsers */
 }
 
 /* Default placeholder color */
@@ -38,7 +39,8 @@
 
 .search-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #0a0a0a;
+  box-shadow: 0 0 0 2px #0a0a0a; /* Black box shadow on focus */
+  -webkit-box-shadow: 0 0 0 2px #0a0a0a; /* For Safari and older browsers */
   background-color: rgb(255, 0, 0);
   color: rgb(255, 255, 255);
 }
@@ -92,6 +94,16 @@
 
   .search-form {
     margin-bottom: 1rem;
+  }
+
+  .search-input {
+    box-shadow: 0 0 0 2px #dc2121; /* Ensure red box shadow is visible on mobile */
+    -webkit-box-shadow: 0 0 0 2px #dc2121; /* For Safari and older browsers */
+  }
+
+  .search-input:focus {
+    box-shadow: 0 0 0 2px #0a0a0a; /* Ensure black box shadow is visible on mobile */
+    -webkit-box-shadow: 0 0 0 2px #0a0a0a; /* For Safari and older browsers */
   }
 }
 
