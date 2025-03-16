@@ -14,7 +14,6 @@ function NavBar() {
           Favorite❤️
         </Link>
       </div>
-      s
     </nav>
   );
 }
